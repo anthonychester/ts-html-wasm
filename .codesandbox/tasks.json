@@ -1,0 +1,32 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Installing wasm helpers",
+      "command": "bash installhelpers.sh"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "install-wasm": {
+      "name": "install-wasm",
+      "command": "bash installhelpers.sh"
+    },
+    "dev": {
+      "name": "dev",
+      "command": "yarn dev",
+      "runAtStart": true
+    },
+    "test": {
+      "name": "test",
+      "command": "yarn test",
+      "runAtStart": false
+    },
+    "build wasm": {
+      "name": "build wasm",
+      "command": "cd main-wasm && wasm-pack build --target web",
+      "runAtStart": false
+    }
+  }
+}
