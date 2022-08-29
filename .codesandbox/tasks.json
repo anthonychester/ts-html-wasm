@@ -25,7 +25,8 @@
     },
     "build wasm": {
       "name": "build wasm",
-      "command": "cd main-wasm && wasm-pack build --target web"
+      "command": "cd main-wasm && wasm-pack build --target web",
+      "runAtStart": false
     }
   }
 }
