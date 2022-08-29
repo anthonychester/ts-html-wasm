@@ -1,8 +1,8 @@
 // This is needed for webpack to bundle and process the css
-import "./main.scss";
+//import "./main.css";
 import init, { greet } from "../main-wasm/pkg/main_wasm.js";
 
-document.getElementById("me").innerHTML = "Yesss 2 new";
+document.getElementById("me").innerHTML = "JS loaded";
 
 init().then(function () {
   greet();
