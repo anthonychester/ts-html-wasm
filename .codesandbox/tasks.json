@@ -4,6 +4,14 @@
     {
       "name": "Installing wasm helpers",
       "command": "bash installhelpers.sh"
+    },
+    {
+      "name": "Installing npm",
+      "command": "npm install"
+    },
+    {
+      "name": "Installing yarn",
+      "command": "yarn install"
     }
   ],
 
@@ -27,6 +35,10 @@
       "name": "build wasm",
       "command": "cd main-wasm && wasm-pack build --target web",
       "runAtStart": false
+    },
+    "addwebpack": {
+      "name": "addwebpack",
+      "command": "yarn add webpack webpack-dev-server --dev"
     }
   }
 }
